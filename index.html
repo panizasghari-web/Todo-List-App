@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+  </head>
+
+  <body>
+    <main
+      class="w-full min-h-screen overflow-x-hidden bg-[linear-gradient(-225deg,rgba(253,218,255,1)_0%,rgba(223,173,252,1)_25%,rgba(172,203,250,1)_45%,rgba(172,231,245,1)_65%,rgba(173,247,245,1)_85%,rgba(202,248,208,1)_100%)]"
+    >
+      <!-- ####################################################### START HEADER ####################################################### -->
+      <div id="todo-header" class="w-full h-20 sm:h-32 md:h-35 overflow-hidden">
+        <div class="w-full h-full flex justify-around items-center">
+          <img
+            class="flower w-[10%] sm:w-[7%] flex justify-center items-center"
+            src="./assets/images/flower.png"
+          />
+          <h1
+            class="w-[70%] sm:w-[70%] md:w-[60%] flex justify-center items-center font-ppshRegular text-4xl sm:text-5xl md:text-6xl text-center"
+          >
+            📖 Todo List 📖
+          </h1>
+          <img
+            class="flower w-[10%] sm:w-[7%] flex justify-center items-center"
+            src="./assets/images/flower.png"
+          />
+        </div>
+      </div>
+      <!-- ####################################################### END HEADER ####################################################### -->
+
+      <!-- ####################################################### START MAIN ####################################################### -->
+      <div
+        id="main-box"
+        class="w-[90%] h-[225vh] md:h-[150vh] bg-[rgb(235,235,235)] shadow-[0_0_30px_rgba(15,23,42,0.18)] rounded-[50px] mb-30 mt-8 mx-auto"
+      >
+        <!-- **************************************************************** -->
+        <div
+          id="search-box"
+          class="w-full h-36 relative flex flex-col justify-center items-center font-peRegular border-b border-gray-400 focus:border-10"
+        >
+          <div id="search-input-wrapper" class="w-full h-full flex justify-center items-center">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="search..."
+              class="w-[60%] h-13 border-2 border-black rounded-tl-[5px] rounded-bl-[5px] pl-1.5 focus:outline-none focus:ring-0"
+            />
+            <button
+              id="search-button"
+              class="w-13 h-13 bg-gray-300 hover:bg-gray-400 transition-colors duration-300 ease-linear border-2 border-l-0 border-black rounded-tr-[5px] rounded-br-[5px] cursor-pointer flex justify-center items-center"
+            >
+              <svg fill="currentColor" class="w-8 h-8" viewBox="0 0 16 16">
+                <path
+                  d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"
+                />
+                <path
+                  d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div
+            id="search-box-write"
+            class="w-[calc(60%+52px)] h-fit absolute top-[70%] bg-pink-50 hidden"
+          ></div>
+        </div>
+        <!-- **************************************************************** -->
+        <div
+          id="second-section"
+          class="w-full h-[200vh] md:h-[120vh] flex flex-wrap justify-evenly items-center mx-auto pt-3"
+        >
+          <!-- **************************************************************** -->
+          <div
+            id="todo-box"
+            class="w-[90%] h-[40%] md:w-[40%] md:h-[90%] -mt-9 md:mt-0 border-2 rounded-[5px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200"
+          >
+            <div
+              class="w-full h-14 border-b-2 font-peRegular flex justify-center items-center bg-gray-300"
+            >
+              <h1 class="text-2xl">Todo List</h1>
+            </div>
+            <div id="todo-write" class="w-full h-full font-peRegular">
+              <div
+                id="todo-calendar"
+                class="w-full h-14 border-b pl-2 flex items-center text-[#757588]"
+              ></div>
+              <div id="todo-input-box" class="w-full h-14 flex border-b">
+                <input
+                  type="text"
+                  id="todo-input"
+                  placeholder="Add a new task ..."
+                  class="w-[calc(100%-56px)] h-full pl-2 border-0 bg-transparent outline-none ring-0 focus:outline-none focus:ring-0"
+                />
+                <button
+                  id="todo-input-button"
+                  class="w-14 h-14 flex justify-center items-center bg-gray-300 hover:bg-gray-400 transition-colors duration-150 ease-linear border-b border-l cursor-pointer"
+                >
+                  <svg
+                    fill="currentColor"
+                    class="bi bi-plus-lg w-[50%] h-[50%]"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div
+                id="todo-list-box"
+                class="w-full h-fit font-ppshRegular"
+              ></div>
+            </div>
+          </div>
+          <!-- **************************************************************** -->
+          <div
+            id="history-box"
+            class="w-[90%] h-[40%] md:w-[40%] md:h-[90%] -mt-24 md:mt-0 border-2 rounded-[5px] overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200"
+          >
+            <div
+              class="w-full h-14 border-b-2 font-peRegular flex justify-center items-center bg-gray-300"
+            >
+              <h1 class="text-2xl">History</h1>
+            </div>
+            <div id="history-sections" class="w-full h-14 flex font-peRegular">
+              <div
+                id="all"
+                class="w-[33.3%] h-14 border-r border-b hover:bg-gray-400 transition-colors duration-150 ease-linear cursor-pointer flex justify-center items-center"
+              >
+                <p>All</p>
+              </div>
+              <div
+                id="active"
+                class="w-[33.3%] h-14 border-r border-b hover:bg-gray-400 transition-colors duration-150 ease-linear cursor-pointer flex justify-center items-center"
+              >
+                <p>Active</p>
+              </div>
+              <div
+                id="completed"
+                class="w-[33.3%] h-14 border-b hover:bg-gray-400 transition-colors duration-150 ease-linear cursor-pointer flex justify-center items-center"
+              >
+                <p>Completed</p>
+              </div>
+            </div>
+            <div id="history-box-write" class="w-full h-full font-ppshRegular">
+              <div id="history-box-all" class="w-full h-full"></div>
+              <div id="history-box-active" class="w-full h-full hidden"></div>
+              <div
+                id="history-box-completed"
+                class="w-full h-full hidden"
+              ></div>
+            </div>
+          </div>
+          <!-- **************************************************************** -->
+        </div>
+      </div>
+      <!-- ####################################################### END MAIN ####################################################### -->
+    </main>
+    <script src="./assets/js/master.js"></script>
+  </body>
+</html>
