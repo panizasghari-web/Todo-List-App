@@ -1,5 +1,36 @@
 # Todo-List-App
+
 Live Demo: https://panizasghari-web.github.io/Todo-List-App/
+
+📝 Advanced Todo List
+
+A feature-rich Todo List Application built with HTML, CSS, Tailwind CSS, and JavaScript. The app provides task management with real-time updates, history tracking, search functionality, and persistent data storage using LocalStorage.
+
+✨ Features
+
+- Add new tasks with the current date and time
+- Edit existing tasks
+- Delete tasks
+- Mark tasks as completed or active
+- Automatic task history management
+- History section with three categories:
+  - All – Displays every task
+  - Active – Displays only incomplete tasks
+  - Completed – Displays only completed tasks
+- Real-time synchronization between Todo List and History sections
+- Search tasks from the All history list
+- Persistent data storage using LocalStorage
+- Responsive and modern user interface
+
+🛠 Technologies Used
+
+- HTML5
+- CSS3
+- Tailwind CSS
+- JavaScript (Vanilla JS)
+- LocalStorage API
+
+📸 Preview
 
 <img width="949" height="413" alt="1" src="https://github.com/user-attachments/assets/0dd4fcde-6f36-41a5-8766-4c2239216ce3" />
 <img width="948" height="412" alt="2" src="https://github.com/user-attachments/assets/755a1e15-bbc9-4408-bdda-e7d6849e9637" />
@@ -20,12 +51,21 @@ Vertical:
 
 <img width="362" height="407" alt="9v" src="https://github.com/user-attachments/assets/37b82178-deef-4d28-beb4-5f3dce4d3202" />
 
-A modern and responsive Todo List App built with HTML, CSS, Tailwind and JavaScript.
-
-Features: Responsive design, Clean and modern UI, CSS and JS effects, localStorage.
-
-Technologies: HTML, CSS, Tailwind4, JavaScript.
+🚀 How to Run
 
 Live Demo: https://panizasghari-web.github.io/Todo-List-App/
 
-Author: Paniz Asghari
+📚 What I Learned
+
+- DOM Manipulation
+- Event Handling
+- CRUD Operations (Create, Read, Update, Delete)
+- LocalStorage API
+- Search & Filter Logic
+- Dynamic UI Rendering
+- State Management with JavaScript
+- Responsive Design with Tailwind CSS
+
+👩‍💻 Author
+
+Developed by Paniz Asghari
