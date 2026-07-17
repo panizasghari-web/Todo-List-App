@@ -53,7 +53,7 @@ A feature-rich Todo List Application built with HTML, CSS, Tailwind CSS, and Jav
 
 ## 🚀 How to Run
 
-Live Demo: https://panizasghari-web.github.io/Todo-List-App/
+https://panizasghari-web.github.io/Todo-List-App/
 
 ## 📚 What I Learned
 
