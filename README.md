@@ -2,11 +2,11 @@
 
 Live Demo: https://panizasghari-web.github.io/Todo-List-App/
 
-#📝 Advanced Todo List
+# 📝 Advanced Todo List
 
 A feature-rich Todo List Application built with HTML, CSS, Tailwind CSS, and JavaScript. The app provides task management with real-time updates, history tracking, search functionality, and persistent data storage using LocalStorage.
 
-#✨ Features
+# ✨ Features
 
 - Add new tasks with the current date and time
 - Edit existing tasks
@@ -22,7 +22,7 @@ A feature-rich Todo List Application built with HTML, CSS, Tailwind CSS, and Jav
 - Persistent data storage using LocalStorage
 - Responsive and modern user interface
 
-#🛠 Technologies Used
+# 🛠 Technologies Used
 
 - HTML5
 - CSS3
@@ -30,7 +30,7 @@ A feature-rich Todo List Application built with HTML, CSS, Tailwind CSS, and Jav
 - JavaScript (Vanilla JS)
 - LocalStorage API
 
-#📸 Preview
+# 📸 Preview
 
 <img width="949" height="413" alt="1" src="https://github.com/user-attachments/assets/0dd4fcde-6f36-41a5-8766-4c2239216ce3" />
 <img width="948" height="412" alt="2" src="https://github.com/user-attachments/assets/755a1e15-bbc9-4408-bdda-e7d6849e9637" />
@@ -51,11 +51,11 @@ Vertical:
 
 <img width="362" height="407" alt="9v" src="https://github.com/user-attachments/assets/37b82178-deef-4d28-beb4-5f3dce4d3202" />
 
-#🚀 How to Run
+# 🚀 How to Run
 
 Live Demo: https://panizasghari-web.github.io/Todo-List-App/
 
-#📚 What I Learned
+# 📚 What I Learned
 
 - DOM Manipulation
 - Event Handling
@@ -66,7 +66,7 @@ Live Demo: https://panizasghari-web.github.io/Todo-List-App/
 - State Management with JavaScript
 - Responsive Design with Tailwind CSS
 
-#👩‍💻 Author
+# 👩‍💻 Author
 
 Developed by Paniz Asghari
 
